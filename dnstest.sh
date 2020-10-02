@@ -19,6 +19,8 @@ PROVIDERS="
 185.228.168.168#cleanbrowsing 
 176.103.130.131#adguardold2
 176.103.130.130#adguardold2
+94.140.14.14#adguard
+94.140.15.15#adguard2
 156.154.70.3#neustar 
 8.26.56.26#comodo
 203.162.4.191#VNPT
@@ -29,8 +31,6 @@ PROVIDERS="
 203.113.131.3#Viettel3
 210.245.24.20#FPT
 210.245.24.22#FPT2
-94.140.14.14#adguard
-94.140.15.15#adguard2
 "
 
 # Domains to test. Duplicated domains are ok

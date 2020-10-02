@@ -2,6 +2,20 @@
 
 Shell script to test the performance of the most popular DNS resolvers from your location.
 
+natri23 modifications: added Vietnam's ISP servers:
+ * 203.162.4.191 VNPT1
+ * 203.162.4.190 VNPT
+ * 210.245.24.20 FPT
+ * 210.245.24.22 FPT2
+ * 203.113.188.1 Viettel
+ * 203.113.131.1 Viettel1
+ * 203.113.131.2 Viettel2
+ * 203.113.131.3 Viettel3
+ 
+ * 94.140.14.14 adguard new dns
+ * 94.140.15.15 adguard new dns
+
+ 
 Includes by default:
  * CloudFlare 1.1.1.1
  * Level3 4.2.2.1

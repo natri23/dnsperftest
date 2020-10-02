@@ -8,30 +8,30 @@ echo "Use 'sort -k 22 -n' to sort results"
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
 PROVIDERS="
-1.1.1.1#cloudflare1.1.1.1 
-1.0.0.1#cloudflare1.0.0.1 
-4.2.2.1#level3_4.2.2.1 
-8.8.8.8#google8.8.8.8 
-8.8.4.4#google8.8.4.4 
+1.1.1.1#cloudflare 
+1.0.0.1#cloudflare2 
+4.2.2.1#level3 
+8.8.8.8#google
+8.8.4.4#google 
 9.9.9.9#quad9 
-80.80.80.80#freenom80.80.80.80 
-208.67.222.123#opendns208.67.222.123 
-199.85.126.20#norton199.85.126.20 
-185.228.168.168#cleanbrowsing185.228.168.168 
-176.103.130.131#adguard176.103.130.131
-176.103.130.130#adguard176.103.130.130
-156.154.70.3#neustar156.154.70.3 
-8.26.56.26#comodo8.26.56.26
-203.162.4.191#VNPT203.162.4.191
-203.162.4.190#VNPT203.162.4.190
-203.113.131.1#Viettel203.113.131.1
-203.113.188.1#Viettel203.113.188.1
-203.113.131.2#Viettel203.113.131.2
-203.113.131.3#Viettel203.113.131.3
-210.245.24.20#FPT210.245.24.20
-210.245.24.22#FPT210.245.24.22
-94.140.14.14#adguard94.140.14.14
-94.140.15.15#adguard94.140.15.15
+80.80.80.80#freenom 
+208.67.222.123#opendns 
+199.85.126.20#norton 
+185.228.168.168#cleanbrowsing 
+176.103.130.131#adguardold2
+176.103.130.130#adguardold2
+156.154.70.3#neustar 
+8.26.56.26#comodo
+203.162.4.191#VNPT
+203.162.4.190#VNPT2
+203.113.131.1#Viettel1
+203.113.188.1#Viettel0
+203.113.131.2#Viettel2
+203.113.131.3#Viettel3
+210.245.24.20#FPT
+210.245.24.22#FPT2
+94.140.14.14#adguard
+94.140.15.15#adguard2
 "
 
 # Domains to test. Duplicated domains are ok

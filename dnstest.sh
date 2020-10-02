@@ -23,12 +23,12 @@ PROVIDERS="
 8.26.56.26#comodo
 203.162.4.191#VNPT1
 203.162.4.190#VNPT
+210.245.24.20#FPT
+210.245.24.22#FPT2
 203.113.188.1#Viettel
 203.113.131.1#Viettel1
 203.113.131.2#Viettel2
 203.113.131.3#Viettel3
-210.245.24.20#FPT
-210.245.24.22#FPT2
 "
 
 # Domains to test. Duplicated domains are ok

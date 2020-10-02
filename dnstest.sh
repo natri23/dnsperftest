@@ -3,27 +3,39 @@
 command -v bc > /dev/null || { echo "bc was not found. Please install bc."; exit 1; }
 { command -v drill > /dev/null && dig=drill; } || { command -v dig > /dev/null && dig=dig; } || { echo "dig was not found. Please install dnsutils."; exit 1; }
 
-
+echo "Use 'sort -k 22 -n' to sort results"
 
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
 PROVIDERS="
-1.1.1.1#cloudflare 
-4.2.2.1#level3 
-8.8.8.8#google 
+1.1.1.1#cloudflare1.1.1.1 
+1.0.0.1#cloudflare1.0.0.1 
+4.2.2.1#level3_4.2.2.1 
+8.8.8.8#google8.8.8.8 
+8.8.4.4#google8.8.4.4 
 9.9.9.9#quad9 
-80.80.80.80#freenom 
-208.67.222.123#opendns 
-199.85.126.20#norton 
-185.228.168.168#cleanbrowsing 
-77.88.8.7#yandex 
-176.103.130.132#adguard 
-156.154.70.3#neustar 
-8.26.56.26#comodo
+80.80.80.80#freenom80.80.80.80 
+208.67.222.123#opendns208.67.222.123 
+199.85.126.20#norton199.85.126.20 
+185.228.168.168#cleanbrowsing185.228.168.168 
+176.103.130.131#adguard176.103.130.131
+176.103.130.130#adguard176.103.130.130
+156.154.70.3#neustar156.154.70.3 
+8.26.56.26#comodo8.26.56.26
+203.162.4.191#VNPT203.162.4.191
+203.162.4.190#VNPT203.162.4.190
+203.113.131.1#Viettel203.113.131.1
+203.113.188.1#Viettel203.113.188.1
+203.113.131.2#Viettel203.113.131.2
+203.113.131.3#Viettel203.113.131.3
+210.245.24.20#FPT210.245.24.20
+210.245.24.22#FPT210.245.24.22
+94.140.14.14#adguard94.140.14.14
+94.140.15.15#adguard94.140.15.15
 "
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com whatsapp.com"
+DOMAINS2TEST="www.google.com drive.google.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com photos.google.com"
 
 
 totaldomains=0

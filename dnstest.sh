@@ -20,7 +20,6 @@ PROVIDERS="
 176.103.130.130#adguardold
 94.140.14.14#adguard14
 94.140.15.15#adguard15
-156.154.70.3#neustar 
 8.26.56.26#comodo
 203.162.4.191#VNPT1
 203.162.4.190#VNPT

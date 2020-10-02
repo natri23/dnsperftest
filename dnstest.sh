@@ -3,7 +3,6 @@
 command -v bc > /dev/null || { echo "bc was not found. Please install bc."; exit 1; }
 { command -v drill > /dev/null && dig=drill; } || { command -v dig > /dev/null && dig=dig; } || { echo "dig was not found. Please install dnsutils."; exit 1; }
 
-echo "Use 'sort -k 22 -n' to sort results"
 
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
@@ -70,6 +69,6 @@ for p in $NAMESERVERS $PROVIDERS; do
 
     echo "  $avg"
 done
-
+echo "Use 'sort -k 22 -n' to sort results"
 
 exit 0;

@@ -16,7 +16,7 @@ PROVIDERS="
 80.80.80.80#freenom 
 208.67.222.123#opendns 
 199.85.126.20#norton 
-185.228.168.168#cleanbrowsing 
+185.228.168.9#cleanbrowsing 
 176.103.130.131#adguardold1
 176.103.130.130#adguardold
 94.140.14.14#adguard14
